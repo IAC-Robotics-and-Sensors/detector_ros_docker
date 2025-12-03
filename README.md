@@ -281,4 +281,5 @@ Dose rates are calculated using dose lookup tables within the
 ```bash
 ~/detector_ros_docker/<detector>/<ros_version>/src/<detector_driver>/config
 ```
-folder each unique detector should be calibrated berfore use of the dose function
+folder each unique detector should be calibrated before reliable use of the dose function.
+
