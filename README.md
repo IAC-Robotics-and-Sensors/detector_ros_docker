@@ -79,15 +79,6 @@ Create:
 with:
 
 ```bash
-###############################################
-# Radiation Detectors USB Access Rules
-# Applies to:
-#   - Kromek Sigma50 (HID)
-#   - Kromek GR1 (HID)
-#   - Hamamatsu scintillation detectors (bulk USB)
-#   - Kromek D3S (serial ACM)
-###############################################
-
 # Kromek Sigma50  (Vendor: 04D8, Product: 0023)
 SUBSYSTEM=="hidraw", ATTRS{idVendor}=="04d8", ATTRS{idProduct}=="0023", \
   MODE="0666", GROUP="plugdev", TAG+="uaccess"
