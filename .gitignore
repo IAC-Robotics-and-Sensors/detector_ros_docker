@@ -1,0 +1,19 @@
+# ROS build and generated files
+build/
+devel/
+install/
+log/
+*.pyc
+__pycache__/
+
+# Docker build artifacts
+*.tar
+*.img
+*.log
+
+# Python cache
+__pycache__/
+
+# IDE junk
+.vscode/
+.idea/

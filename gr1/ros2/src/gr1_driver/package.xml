@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>gr1_driver</name>
+  <version>0.1.0</version>
+  <description>ROS2 driver for the GR1 radiation detector</description>
+
+  <maintainer email="you@example.com">Your Name</maintainer>
+  <license>BSD</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- ROS2 runtime deps -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <!-- System deps -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-hid</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

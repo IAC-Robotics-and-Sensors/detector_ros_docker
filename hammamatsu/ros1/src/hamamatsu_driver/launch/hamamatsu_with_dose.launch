@@ -1,0 +1,21 @@
+<launch>
+    <!-- Hamamatsu spectrum node -->
+    <node pkg="hamamatsu_driver"
+          type="hamamatsu_node.py"
+          name="hamamatsu_node"
+          output="screen">
+        <param name="log_enabled" value="true" />
+        <param name="log_dir" value="/data" />
+    </node>
+
+    <!-- Dose-rate calculator -->
+    <node pkg="hamamatsu_driver"
+          type="hamamatsu_dose_node.py"
+          name="hamamatsu_dose_node"
+          output="screen">
+        <param name="spectrum_topic" value="/hamamatsu/spectrum"/>
+        <param name="dose_topic" value="/hamamatsu/dose_rate"/>
+        <param name="lookup_path" value="$(find hamamatsu_driver)/config/bin_energy_dose_lookup.csv"/>
+        <param name="n_channels" value="4096"/>
+    </node>
+</launch>

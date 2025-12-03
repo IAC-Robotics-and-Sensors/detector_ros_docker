@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<package format="3">
+  <name>sigma50_driver</name>
+  <version>0.1.0</version>
+  <description>ROS2 driver for the Kromek Sigma 50 detector</description>
+
+  <maintainer email="billdor@todo.todo">billdor</maintainer>
+  <license>TODO</license>
+
+  <!-- Build tools -->
+  <buildtool_depend>ament_cmake</buildtool_depend>
+  <buildtool_depend>ament_cmake_python</buildtool_depend>
+
+  <!-- ROS2 runtime deps -->
+  <depend>rclpy</depend>
+  <depend>std_msgs</depend>
+
+  <!-- System deps (helpful but optional) -->
+  <exec_depend>python3-numpy</exec_depend>
+  <exec_depend>python3-hid</exec_depend>
+
+  <export>
+    <build_type>ament_cmake</build_type>
+  </export>
+</package>

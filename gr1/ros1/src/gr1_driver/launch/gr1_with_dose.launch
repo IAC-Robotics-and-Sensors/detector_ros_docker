@@ -1,0 +1,19 @@
+<launch>
+  <!-- GR1 spectrum + CPS node -->
+  <node pkg="gr1_driver"
+        type="gr1_node.py"
+        name="gr1_node"
+        output="screen" />
+
+  <!-- GR1 dose calculator node -->
+  <node pkg="gr1_driver"
+        type="gr1_dose_node.py"
+        name="gr1_dose_node"
+        output="screen">
+    <param name="spectrum_topic" value="/gr1/spectrum" />
+    <param name="dose_topic" value="/gr1/dose_rate" />
+    <param name="n_channels" value="4096" />
+    <param name="lookup_path"
+           value="$(find gr1_driver)/config/bin_energy_dose_lookup.csv" />
+  </node>
+</launch>

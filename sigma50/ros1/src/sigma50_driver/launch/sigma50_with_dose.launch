@@ -1,0 +1,25 @@
+<launch>
+  <!-- Normal Sigma50 driver node (publishes /sigma50/spectrum and /sigma50/cps) -->
+  <node pkg="sigma50_driver"
+        type="sigma50_node.py"
+        name="sigma50_node"
+        output="screen" />
+
+  <!-- Dose rate node using the lookup table -->
+  <node pkg="sigma50_driver"
+        type="sigma50_dose_node.py"
+        name="sigma50_dose_node"
+        output="screen">
+
+    <!-- Path to lookup table -->
+    <param name="lookup_path"
+           value="$(find sigma50_driver)/config/bin_energy_dose_lookup.csv" />
+
+    <!-- Topics -->
+    <param name="spectrum_topic" value="/sigma50/spectrum" />
+    <param name="dose_topic"     value="/sigma50/dose_rate" />
+
+    <!-- Number of channels -->
+    <param name="n_channels"     value="4096" />
+  </node>
+</launch>
