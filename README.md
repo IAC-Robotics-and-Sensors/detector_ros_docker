@@ -17,7 +17,7 @@ and visualisation tools for:
 - Multi-sensor compatible spectrum plotting
 - Network-transparent (DDS cross-container support)
 
-##Setting up
+## Setting up
 
 # Update and certificates
 sudo apt-get update
