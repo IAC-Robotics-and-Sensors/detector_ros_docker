@@ -132,7 +132,7 @@ docker run -it \
   --ipc=host \
   --privileged \
   -v /dev/bus/usb:/dev/bus/usb \
-  -v ~/rad_logs/gr2:/data \
+  -v ~/rad_logs/gr1:/data \
   gr1_ros2
 ```
 
@@ -165,7 +165,7 @@ docker run -it \
   --ipc=host \
   --privileged \
   -v /dev/bus/usb:/dev/bus/usb \
-  -v ~/rad_logs/hammamatsu:/data \
+  -v ~/rad_logs/hamamatsu:/data \
   hamamatsu_ros2
 ```
 
