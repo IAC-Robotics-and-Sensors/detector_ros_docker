@@ -16,7 +16,7 @@ and **visualisation tools** for:
 - Dose calculators for Sigma50, Hamamatsu & GR1  
 - Multi-sensor compatible spectrum plotting  
 - Network-transparent (DDS cross-container support)
-
+- Saved spectrum .csv
 ---
 
 ## Installing Docker
@@ -158,7 +158,7 @@ docker run -it \
 
 ```bash
 cd ~/detector_ros_docker/hammamatsu/ros2
-docker build --no-cache -t hammamatsu_ros2 .
+docker build --no-cache -t hamamatsu_ros2 .
 
 docker run -it \
   --net=host \
