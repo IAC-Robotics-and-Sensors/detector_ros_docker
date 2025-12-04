@@ -207,7 +207,7 @@ docker run -it \
 # Visualiser
 
 ---
-
+Run the visualiser container in a seprate terminal once the detector container has been built, it will allow you to select topics for CPS spectrum and dose.
 ## Visualiser — ROS1
 
 ```bash
