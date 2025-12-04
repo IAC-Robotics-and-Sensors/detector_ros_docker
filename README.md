@@ -245,7 +245,7 @@ docker run --rm -it \
 ```
 # Notes
 ## Spectrums
-Spectrums of the different detectors can be found:
+Spectrums of the different detectors can be found in rad_logs when the detector topic has been closed
 ```bash
 cd ~/rad_logs
 ```
